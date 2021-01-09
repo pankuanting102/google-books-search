@@ -32,5 +32,5 @@ https://google-search-book-ktp.herokuapp.com/
 </div>
 
 <br><div style="width: 90vw; margin: auto; border: 1px black solid">
-<img src="https://github.com/pankuanting102/google-books-search/blob/master/client/public/assets/Screen%20Shot%202021-01-08%20at%2011.12.54%20PM.png?raw=true">
+<img src="https://github.com/pankuanting102/google-books-search/blob/master/client/public/assets/Screen%20Shot%202021-01-08%20at%2011.14.27%20PM.png?raw=true">
 </div>
