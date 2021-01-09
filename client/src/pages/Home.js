@@ -3,10 +3,13 @@ import Jumbotron from "../components/Jumbotron";
 import Card from "../components/Card";
 import Form from "../components/Form";
 import Book from "../components/Book";
-import Footer from "../components/Footer";
 import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
 import { List } from "../components/List";
+
+let styles ={
+  color: "white",
+}
 
 class Home extends Component {
   state = {
@@ -32,7 +35,7 @@ class Home extends Component {
       .catch(() =>
         this.setState({
           books: [],
-          message: "No New Books Found, Try a Different Query"
+          message: "No New Books Found, Try Different Keyword"
         })
       );
   };
@@ -61,11 +64,11 @@ class Home extends Component {
       <Container>
         <Row>
           <Col size="md-12">
-            <Jumbotron>
-              <h1 className="text-center">
+            <Jumbotron >
+              <h1 className="text-center" style={styles}>
                 <strong>(React) Google Books Search</strong>
               </h1>
-              <h2 className="text-center">Search for and Save Books of Interest.</h2>
+              <h2 className="text-center" style={styles}>Search for and Save Books of Interest.</h2>
             </Jumbotron>
           </Col>
           <Col size="md-12">
@@ -109,7 +112,6 @@ class Home extends Component {
             </Card>
           </Col>
         </Row>
-        <Footer />
       </Container>
     );
   }

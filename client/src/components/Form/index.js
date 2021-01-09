@@ -1,18 +1,22 @@
 import React from "react";
+import "./index.css";
+let styles = {
+  form: { border: "1px solid #bababa", borderRadius: "30px", display: "block", paddingLeft:"20px", width:"100%",},
+};
 
 function Form({ q, handleInputChange, handleFormSubmit }) {
   return (
-    <form>
+    <form autocomplete="off">
       <div className="form-group">
         <label htmlFor="Query">
           <strong>Book</strong>
         </label>
         <input
-          className="form-control"
+          style={styles.form}
           id="Title"
           type="text"
           value={q}
-          placeholder="Ready Player One"
+          placeholder="Seach Book Name"
           name="q"
           onChange={handleInputChange}
           required
@@ -22,9 +26,8 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
         <button
           onClick={handleFormSubmit}
           type="submit"
-          className="btn btn-lg btn-danger float-right"
+          className="btn btn-lg btn-primary fa fa-search"
         >
-          Search
         </button>
       </div>
     </form>
