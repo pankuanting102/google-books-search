@@ -5,7 +5,9 @@ import Book from "../components/Book";
 import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
 import { List } from "../components/List";
-
+let styles ={
+  color: "white",
+}
 class Saved extends Component {
   state = {
     books: []
@@ -35,10 +37,10 @@ class Saved extends Component {
         <Row>
           <Col size="md-12">
             <Jumbotron>
-              <h1 className="text-center">
+              <h1 className="text-center" style={styles}>
                 <strong>(React) Google Books Search</strong>
               </h1>
-              <h2 className="text-center">Search for and Save Books of Interest.</h2>
+              <h2 className="text-center" style={styles}>Search for and Save Books of Interest.</h2>
             </Jumbotron>
           </Col>
         </Row>
